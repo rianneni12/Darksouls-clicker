@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Souls Clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1 id="titulo">Dark Souls Clicker</h1>
+    <!--Imagem do jogo e Botao para clicar-->
+    <div class="container">
+        <section class="esquerda">
+            <div>
+                <button id="cinder" onclick="diminuirTamanho()"><img id="cebola" src="imgs/dark sem fundo.png" alt=""></button>
+            </div>
+            <p id="contador">Almas 0</p>
+        </section>
+        <!--Tabela de Upgrades-->
+        <section class="direita">
+            <div class="upgrades">
+                <h1>UPGRADES</h1>
+                <div><button id="upgrade1" onclick="upgrade1(1)">+1 Alma por clique <br> CUSTO: 10 almas </button></div>
+                <div><button id="upgrade2" onclick="upgrade2(8)">+8 Almas por clique <br> CUSTO: 50 almas</button></div>
+                <div><button id="upgrade3" onclick="upgrade3(32)">+32 Almas por clique <br> CUSTO: 100 almas </button></div>
+                <p id="poder">ALMAS RECEBIDAS POR CLIQUE:  1</p>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
